@@ -154,6 +154,11 @@ body {
 .content {
   margin: 0;
 }
+.content-data {
+  text-align: center;
+  font-weight: bold;
+  color: #F6F1D1;
+}
 
 .task.done .content {
   text-decoration: line-through;

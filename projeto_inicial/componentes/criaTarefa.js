@@ -1,5 +1,6 @@
 import BotaoConclui from './concluiTarefa.js'
 import BotaoDeleta from './deletaTarefa.js'
+import { carregaTarefa } from './carregaTarefa.js'
  
 export const handleNovoItem = (evento) => {
 
@@ -22,6 +23,7 @@ export const handleNovoItem = (evento) => {
     //sessionStorage.setItem("tarefas", JSON.stringify(dados)) armazenamento dos dados recebidos do cliente na API do Navegador Chrome apenas enquanto a sessão estiver aberta(Console -> >> -> Application -> Session Storage)
     localStorage.setItem("tarefas", JSON.stringify(tarefasAtualizadas)) //diferente do sessionStorage, armazena os dados mesmo após o navegador ser fechado.   
     input.value = " "
+    carregaTarefa()
 
 }
 

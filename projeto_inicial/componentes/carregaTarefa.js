@@ -1,15 +1,12 @@
 import { criaData } from "./criaData.js"
+import { removeDatasRepetidas } from '../service/data.js'
 
 export const carregaTarefa =  () => {
     const lista = document.querySelector('[data-list]')
-    lista.innerHTML = ''
     const tarefasCadastradas = JSON.parse(localStorage.getItem('tarefas')) || []
-    
-        tarefasCadastradas.forEach(tarefa => {
-            const dia = moment(tarefa.dataFormatada, 'DD/MM/YYYY')
-            const diff = data.diff(dia)
-            if (diff === 0) {
-                lista.appendChild(criaData(dia))
-            }
+    lista.innerHTML = ''
+    const datasUnicas = removeDatasRepetidas(tarefasCadastradas)
+        datasUnicas.forEach(dia => {
+            lista.appendChild(criaData(dia))
         })
 }

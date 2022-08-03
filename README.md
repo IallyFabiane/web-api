@@ -2,6 +2,8 @@
 
 <h3>Alura<h3>
 
+<h2>Project deployed on: https://spiffy-biscochitos-0f29a7.netlify.app/</h2>
+
 <div style="display: inline_block"><br>
   <img align="center" alt="Rafa-Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
   <img align="center" alt="Rafa-HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
